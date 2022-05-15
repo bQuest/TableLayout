@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="*"
+    android:id="@+id/table1"
+    tools:context=".MainActivity">
+
+    <TableRow >
+     <EditText
+         android:id="@+id/android_version"
+         android:hint="Enter Android Version"
+         android:layout_width="match_parent"
+         android:layout_span="2"/>
+    </TableRow>
+    <TableRow >
+        <EditText
+            android:id="@+id/android_version_name"
+            android:hint="Enter Android Code Name"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Version" />
+        <TextView
+            android:text="Code Name"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Android 8.0"/>
+        <TextView
+            android:text="Oreo"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Android 9.0"/>
+        <TextView
+            android:text="Pie"/>
+    </TableRow>
+</TableLayout>
